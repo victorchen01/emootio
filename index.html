@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+        <div class="row center">
+          <!-- logo here -->
+        </div>
+
+        <div class="container row center">
+          <h1 class="header col s12 light">Who is this gift for?</h1>
+          <div class="input-field col s6 offset-s3">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Recipient Name</label>
+          </div>
+        </div>
+
+        <div class="row center">
+          <h1 class="header col s12 light">What feelings or emotions would you like your EMOOT to express?</h1>
+        </div>
+
+        <div class="carousel">
+            <a class="carousel-item" href="build.html"><img src="gratitude.jpg"></a>
+            <a class="carousel-item" href="build.html"><img src="happiness.jpg"></a>
+            <a class="carousel-item" href="build.html"><img src="love.jpg"></a>
+            <a class="carousel-item" href="build.html"><img src="pos.jpg"></a>
+            <a class="carousel-item" href="build.html"><img src="sad.jpg"></a>
+          </div>
+
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.carousel');
+          var instances = M.Carousel.init(elems, null);
+          var instance = M.Carousel.init({fullWidth: true});
+          });
+        </script>
+    </body>
+  </html>
